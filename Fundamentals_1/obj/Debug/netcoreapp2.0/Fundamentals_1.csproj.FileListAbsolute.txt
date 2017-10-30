@@ -1,0 +1,10 @@
+/Users/sammiae/Documents/C#/Fundamentals_1/bin/Debug/netcoreapp2.0/Fundamentals_1.deps.json
+/Users/sammiae/Documents/C#/Fundamentals_1/bin/Debug/netcoreapp2.0/Fundamentals_1.runtimeconfig.json
+/Users/sammiae/Documents/C#/Fundamentals_1/bin/Debug/netcoreapp2.0/Fundamentals_1.runtimeconfig.dev.json
+/Users/sammiae/Documents/C#/Fundamentals_1/bin/Debug/netcoreapp2.0/Fundamentals_1.dll
+/Users/sammiae/Documents/C#/Fundamentals_1/bin/Debug/netcoreapp2.0/Fundamentals_1.pdb
+/Users/sammiae/Documents/C#/Fundamentals_1/obj/Debug/netcoreapp2.0/Fundamentals_1.csproj.CoreCompileInputs.cache
+/Users/sammiae/Documents/C#/Fundamentals_1/obj/Debug/netcoreapp2.0/Fundamentals_1.AssemblyInfoInputs.cache
+/Users/sammiae/Documents/C#/Fundamentals_1/obj/Debug/netcoreapp2.0/Fundamentals_1.AssemblyInfo.cs
+/Users/sammiae/Documents/C#/Fundamentals_1/obj/Debug/netcoreapp2.0/Fundamentals_1.dll
+/Users/sammiae/Documents/C#/Fundamentals_1/obj/Debug/netcoreapp2.0/Fundamentals_1.pdb

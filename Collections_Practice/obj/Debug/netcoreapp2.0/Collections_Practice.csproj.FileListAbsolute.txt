@@ -1,0 +1,10 @@
+/Users/sammiae/Documents/C#/Collections_Practice/bin/Debug/netcoreapp2.0/Collections_Practice.deps.json
+/Users/sammiae/Documents/C#/Collections_Practice/bin/Debug/netcoreapp2.0/Collections_Practice.runtimeconfig.json
+/Users/sammiae/Documents/C#/Collections_Practice/bin/Debug/netcoreapp2.0/Collections_Practice.runtimeconfig.dev.json
+/Users/sammiae/Documents/C#/Collections_Practice/bin/Debug/netcoreapp2.0/Collections_Practice.dll
+/Users/sammiae/Documents/C#/Collections_Practice/bin/Debug/netcoreapp2.0/Collections_Practice.pdb
+/Users/sammiae/Documents/C#/Collections_Practice/obj/Debug/netcoreapp2.0/Collections_Practice.csproj.CoreCompileInputs.cache
+/Users/sammiae/Documents/C#/Collections_Practice/obj/Debug/netcoreapp2.0/Collections_Practice.AssemblyInfoInputs.cache
+/Users/sammiae/Documents/C#/Collections_Practice/obj/Debug/netcoreapp2.0/Collections_Practice.AssemblyInfo.cs
+/Users/sammiae/Documents/C#/Collections_Practice/obj/Debug/netcoreapp2.0/Collections_Practice.dll
+/Users/sammiae/Documents/C#/Collections_Practice/obj/Debug/netcoreapp2.0/Collections_Practice.pdb
