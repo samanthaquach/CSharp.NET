@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Puzzles
 {
@@ -128,6 +129,30 @@ namespace Puzzles
             Console.WriteLine("You asked to flip " + num + " coins. Done! Ratio of heads to tails was " + ratioheadstotails + "% heads to tails. I counted " + headcount + " heads and " + tailcount + " tails.");
 
             return ratioheadstotails;
+        
         }
+        public static string [] Names()
+        {
+            string[] names = new string[5] { "Todd", "Tiffany", "Charlie", "Geneva", "Sydney" };
+            Random rand = new Random();
+            for (var i = 0; i < names.Length - 1; i++)
+            {
+                int random = rand.Next(i + 1, names.Length - 1);
+                string temp = names[i];
+                names[i] = names[random];
+                names[random] = temp;
+                Console.WriteLine(names[i]);
+            }
+            Console.WriteLine(names[names.Length - 1]);
+
+            List<string> nameList = new List<string>();
+            foreach (var name in names)
+            {
+                nameList.Add(name);
+            }
+            return nameList.ToArray();
+
+        }
+        
     }
 }
