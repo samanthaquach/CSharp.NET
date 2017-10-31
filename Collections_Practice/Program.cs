@@ -8,7 +8,7 @@ namespace Collections_Practice
         static void Main(string[] args)
         {
             int[] arrayOfInts = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-            string[] myCars = { "Tim", "Martin", "Nikki", "Sara" };
+            string[] myNames = { "Tim", "Martin", "Nikki", "Sara" };
 
             bool[] array = new bool[10];
             array [0] = true;

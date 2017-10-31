@@ -1,0 +1,10 @@
+/Users/sammiae/Documents/C#/Boxing_Unboxing/bin/Debug/netcoreapp2.0/Boxing_Unboxing.deps.json
+/Users/sammiae/Documents/C#/Boxing_Unboxing/bin/Debug/netcoreapp2.0/Boxing_Unboxing.runtimeconfig.json
+/Users/sammiae/Documents/C#/Boxing_Unboxing/bin/Debug/netcoreapp2.0/Boxing_Unboxing.runtimeconfig.dev.json
+/Users/sammiae/Documents/C#/Boxing_Unboxing/bin/Debug/netcoreapp2.0/Boxing_Unboxing.dll
+/Users/sammiae/Documents/C#/Boxing_Unboxing/bin/Debug/netcoreapp2.0/Boxing_Unboxing.pdb
+/Users/sammiae/Documents/C#/Boxing_Unboxing/obj/Debug/netcoreapp2.0/Boxing_Unboxing.csproj.CoreCompileInputs.cache
+/Users/sammiae/Documents/C#/Boxing_Unboxing/obj/Debug/netcoreapp2.0/Boxing_Unboxing.AssemblyInfoInputs.cache
+/Users/sammiae/Documents/C#/Boxing_Unboxing/obj/Debug/netcoreapp2.0/Boxing_Unboxing.AssemblyInfo.cs
+/Users/sammiae/Documents/C#/Boxing_Unboxing/obj/Debug/netcoreapp2.0/Boxing_Unboxing.dll
+/Users/sammiae/Documents/C#/Boxing_Unboxing/obj/Debug/netcoreapp2.0/Boxing_Unboxing.pdb
