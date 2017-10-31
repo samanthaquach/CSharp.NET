@@ -11,7 +11,7 @@ namespace Puzzles
         }
         static void randomArray()
         {
-            Console.WriteLine("========================== Random Array ==============================");
+            Console.WriteLine("Random Array");
             // Random Array
             // Create a function called RandomArray() that returns an integer array  
             List<int> randlist = new List<int>();
