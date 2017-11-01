@@ -1,0 +1,10 @@
+/Users/sammiae/Documents/C#/WizardNinjaSamurai/bin/Debug/netcoreapp2.0/WizardNinjaSamurai.deps.json
+/Users/sammiae/Documents/C#/WizardNinjaSamurai/bin/Debug/netcoreapp2.0/WizardNinjaSamurai.runtimeconfig.json
+/Users/sammiae/Documents/C#/WizardNinjaSamurai/bin/Debug/netcoreapp2.0/WizardNinjaSamurai.runtimeconfig.dev.json
+/Users/sammiae/Documents/C#/WizardNinjaSamurai/bin/Debug/netcoreapp2.0/WizardNinjaSamurai.dll
+/Users/sammiae/Documents/C#/WizardNinjaSamurai/bin/Debug/netcoreapp2.0/WizardNinjaSamurai.pdb
+/Users/sammiae/Documents/C#/WizardNinjaSamurai/obj/Debug/netcoreapp2.0/WizardNinjaSamurai.csproj.CoreCompileInputs.cache
+/Users/sammiae/Documents/C#/WizardNinjaSamurai/obj/Debug/netcoreapp2.0/WizardNinjaSamurai.AssemblyInfoInputs.cache
+/Users/sammiae/Documents/C#/WizardNinjaSamurai/obj/Debug/netcoreapp2.0/WizardNinjaSamurai.AssemblyInfo.cs
+/Users/sammiae/Documents/C#/WizardNinjaSamurai/obj/Debug/netcoreapp2.0/WizardNinjaSamurai.dll
+/Users/sammiae/Documents/C#/WizardNinjaSamurai/obj/Debug/netcoreapp2.0/WizardNinjaSamurai.pdb
