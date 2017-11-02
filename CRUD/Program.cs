@@ -85,16 +85,40 @@ namespace CRUD
         static void Main(string[] args)
         {
             // ---------------- DISPLAYING ALL CRUD OPERATIONS --------------
-            
-            // CreateData();
-            UpdateData();
-            // DestroyData();
-            ReadData();
-        }
+            bool ask = true;
+            while (ask)
+            {
+                Console.WriteLine("What would you like to do? (Options are 'create', 'read', 'update', 'delete', and 'exit'):");
+                string command = Console.ReadLine();
+                switch (command)
+                {
+
+                    case "create":
+                        CreateData();
+                        break;
+                    case "read":
+                        ReadData();
+                        break;
+                    case "update":
+                        UpdateData();
+                        break;
+                    case "delete":
+                        DestroyData();
+                        break;
+                    case "exit":
+                        ask = false;
+                        break;
+
+                }
+            }
+
+        }   
 
 
 
     
     }
 
+
 }
+
