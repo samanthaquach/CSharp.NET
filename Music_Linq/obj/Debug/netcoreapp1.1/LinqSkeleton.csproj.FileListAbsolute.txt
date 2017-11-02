@@ -1,0 +1,10 @@
+/Users/sammiae/Documents/Music_Linq/bin/Debug/netcoreapp1.1/LinqSkeleton.deps.json
+/Users/sammiae/Documents/Music_Linq/obj/Debug/netcoreapp1.1/LinqSkeleton.csproj.CoreCompileInputs.cache
+/Users/sammiae/Documents/Music_Linq/obj/Debug/netcoreapp1.1/LinqSkeleton.AssemblyInfoInputs.cache
+/Users/sammiae/Documents/Music_Linq/obj/Debug/netcoreapp1.1/LinqSkeleton.AssemblyInfo.cs
+/Users/sammiae/Documents/Music_Linq/obj/Debug/netcoreapp1.1/LinqSkeleton.dll
+/Users/sammiae/Documents/Music_Linq/obj/Debug/netcoreapp1.1/LinqSkeleton.pdb
+/Users/sammiae/Documents/Music_Linq/bin/Debug/netcoreapp1.1/LinqSkeleton.runtimeconfig.json
+/Users/sammiae/Documents/Music_Linq/bin/Debug/netcoreapp1.1/LinqSkeleton.runtimeconfig.dev.json
+/Users/sammiae/Documents/Music_Linq/bin/Debug/netcoreapp1.1/LinqSkeleton.dll
+/Users/sammiae/Documents/Music_Linq/bin/Debug/netcoreapp1.1/LinqSkeleton.pdb

@@ -1,0 +1,10 @@
+/Users/sammiae/Documents/C#/CRUD/bin/Debug/netcoreapp2.0/CRUD.deps.json
+/Users/sammiae/Documents/C#/CRUD/bin/Debug/netcoreapp2.0/CRUD.runtimeconfig.json
+/Users/sammiae/Documents/C#/CRUD/bin/Debug/netcoreapp2.0/CRUD.runtimeconfig.dev.json
+/Users/sammiae/Documents/C#/CRUD/bin/Debug/netcoreapp2.0/CRUD.dll
+/Users/sammiae/Documents/C#/CRUD/bin/Debug/netcoreapp2.0/CRUD.pdb
+/Users/sammiae/Documents/C#/CRUD/obj/Debug/netcoreapp2.0/CRUD.csproj.CoreCompileInputs.cache
+/Users/sammiae/Documents/C#/CRUD/obj/Debug/netcoreapp2.0/CRUD.AssemblyInfoInputs.cache
+/Users/sammiae/Documents/C#/CRUD/obj/Debug/netcoreapp2.0/CRUD.AssemblyInfo.cs
+/Users/sammiae/Documents/C#/CRUD/obj/Debug/netcoreapp2.0/CRUD.dll
+/Users/sammiae/Documents/C#/CRUD/obj/Debug/netcoreapp2.0/CRUD.pdb
