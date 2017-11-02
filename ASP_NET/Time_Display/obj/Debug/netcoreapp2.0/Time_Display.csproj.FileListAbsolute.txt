@@ -1,0 +1,10 @@
+/Users/sammiae/Documents/C#/ASP_NET/Time_Display/bin/Debug/netcoreapp2.0/Time_Display.deps.json
+/Users/sammiae/Documents/C#/ASP_NET/Time_Display/bin/Debug/netcoreapp2.0/Time_Display.runtimeconfig.json
+/Users/sammiae/Documents/C#/ASP_NET/Time_Display/bin/Debug/netcoreapp2.0/Time_Display.runtimeconfig.dev.json
+/Users/sammiae/Documents/C#/ASP_NET/Time_Display/bin/Debug/netcoreapp2.0/Time_Display.dll
+/Users/sammiae/Documents/C#/ASP_NET/Time_Display/bin/Debug/netcoreapp2.0/Time_Display.pdb
+/Users/sammiae/Documents/C#/ASP_NET/Time_Display/obj/Debug/netcoreapp2.0/Time_Display.csproj.CoreCompileInputs.cache
+/Users/sammiae/Documents/C#/ASP_NET/Time_Display/obj/Debug/netcoreapp2.0/Time_Display.AssemblyInfoInputs.cache
+/Users/sammiae/Documents/C#/ASP_NET/Time_Display/obj/Debug/netcoreapp2.0/Time_Display.AssemblyInfo.cs
+/Users/sammiae/Documents/C#/ASP_NET/Time_Display/obj/Debug/netcoreapp2.0/Time_Display.dll
+/Users/sammiae/Documents/C#/ASP_NET/Time_Display/obj/Debug/netcoreapp2.0/Time_Display.pdb

@@ -1,0 +1,10 @@
+/Users/sammiae/Documents/C#/ASP_NET/Calling_Card/bin/Debug/netcoreapp2.0/Calling_Card.deps.json
+/Users/sammiae/Documents/C#/ASP_NET/Calling_Card/bin/Debug/netcoreapp2.0/Calling_Card.runtimeconfig.json
+/Users/sammiae/Documents/C#/ASP_NET/Calling_Card/bin/Debug/netcoreapp2.0/Calling_Card.runtimeconfig.dev.json
+/Users/sammiae/Documents/C#/ASP_NET/Calling_Card/bin/Debug/netcoreapp2.0/Calling_Card.dll
+/Users/sammiae/Documents/C#/ASP_NET/Calling_Card/bin/Debug/netcoreapp2.0/Calling_Card.pdb
+/Users/sammiae/Documents/C#/ASP_NET/Calling_Card/obj/Debug/netcoreapp2.0/Calling_Card.csproj.CoreCompileInputs.cache
+/Users/sammiae/Documents/C#/ASP_NET/Calling_Card/obj/Debug/netcoreapp2.0/Calling_Card.AssemblyInfoInputs.cache
+/Users/sammiae/Documents/C#/ASP_NET/Calling_Card/obj/Debug/netcoreapp2.0/Calling_Card.AssemblyInfo.cs
+/Users/sammiae/Documents/C#/ASP_NET/Calling_Card/obj/Debug/netcoreapp2.0/Calling_Card.dll
+/Users/sammiae/Documents/C#/ASP_NET/Calling_Card/obj/Debug/netcoreapp2.0/Calling_Card.pdb
