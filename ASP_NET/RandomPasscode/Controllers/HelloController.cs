@@ -39,6 +39,8 @@ namespace RandomPasscode.Controllers
             //return View("Index");
         }
 
+    // ==== OUT OF CONTROLLER ===
+
     }
 
     // ============ GENERATING THE CODE ===========
@@ -68,7 +70,7 @@ namespace RandomPasscode.Controllers
     }
 
 
-    // ==== OUT OF CONTROLLER ===
+    
 
 }
 
