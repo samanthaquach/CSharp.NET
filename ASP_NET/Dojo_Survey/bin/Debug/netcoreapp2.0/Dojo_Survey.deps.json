@@ -21,18 +21,17 @@
   },
   "targets": {
     ".NETCoreApp,Version=v2.0": {
-      "Start/1.0.0": {
+      "Dojo_Survey/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.All": "2.0.0",
           "Microsoft.AspNetCore.Mvc": "2.0.0",
-          "Microsoft.AspNetCore.StaticFiles": "2.0.0",
           "Microsoft.NETCore.App": "2.0.0"
         },
         "runtime": {
-          "Start.dll": {}
+          "Dojo_Survey.dll": {}
         },
         "compile": {
-          "Start.dll": {}
+          "Dojo_Survey.dll": {}
         }
       },
       "Libuv/1.10.0": {
@@ -3975,7 +3974,7 @@
     }
   },
   "libraries": {
-    "Start/1.0.0": {
+    "Dojo_Survey/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

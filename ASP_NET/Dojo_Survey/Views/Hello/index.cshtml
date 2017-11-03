@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Survey</title>
+        <!-- // In this context '~' refers to the wwwroot folder -->
+        <link rel="stylesheet" href="~/css/style.css"/>
+        <link rel="stylesheet" href="base/css/bootstrap_spacelab.css">
+    </head>
+
+    <body>
+        <form class="form-horizontal" action="result" method="post">
+        <fieldset>
+            <h1>Dojo Survey</h1>
+            <!-- ==================== NAME NAME NAME =================================== -->
+            <div class="form-group">
+                <label for="inputName" class="col-md-2 control-label">Name</label>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" name="name" id="inputName" placeholder="Name">
+                </div>
+            </div>
+
+
+            <!-- ===================== COMMENT COMMENT COMMENT ============================ -->
+            <div class="form-group">
+                <label for="comment" class="col-md-2 control-label">Comment</label>
+                <div class="col-md-10">
+                    <textarea class="form-control" name="comment" rows="3" id="textArea"></textarea>
+                    <span class="help-block">An Optional Comment.</span>
+                </div>
+            </div>
+
+            <!-- ===================== LOCATION DOJO LOCATION ================================= -->
+
+            <div class="form-group">
+                <label for="select" class="col-md-2 control-label">Dojo Location</label>
+                <div class="col-md-10">
+                    <select class="form-control" name="location" id="location">
+                        <option selected>Silicon Valley</option>
+                        <option>Seattle</option>
+                        <option>Los Angeles</option>
+                        <option>Dallas</option>
+                        <option>Washington DC</option>
+                        <option>Chicago</option>
+                        <option>Berkeley</option>
+                        <option>Orange County</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- ===================== LANGUAGE LANGUAGE LANGUAGE =============================== -->
+
+            <div class="form-group">
+                <label for="select" class="col-md-2 control-label">Language</label>
+                <div class="col-md-10">
+                    <select class="form-control" name="language" id="language">
+                        <option>HTML</option>
+                        <option>CSS</option>
+                        <option>JavaScript</option>
+                        <option>Python</option>
+                        <option>MYSQL</option>
+                        <option selected>C#</option>
+                        <option>Ruby</option>
+                        <option>Swift</option>
+                        <option>PHP</option>
+                    </select>
+                </div>
+            </div>
+
+             <!-- ===================== SUBMIT FORM BUTTON ================================= -->
+            <div class="form-group">
+            <div class="col-md-10 col-md-offset-2">
+                <button type="reset" class="btn btn-default">Cancel</button>
+                <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+            </div>
+            </div>
+
+            
+        </fieldset>
+        </form>
+
+
+    </body>
+
+</html>

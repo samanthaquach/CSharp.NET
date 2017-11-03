@@ -1,0 +1,10 @@
+/Users/sammiae/Documents/C#/ASP_NET/Portfolio/bin/Debug/netcoreapp2.0/Portfolio.deps.json
+/Users/sammiae/Documents/C#/ASP_NET/Portfolio/bin/Debug/netcoreapp2.0/Portfolio.runtimeconfig.json
+/Users/sammiae/Documents/C#/ASP_NET/Portfolio/bin/Debug/netcoreapp2.0/Portfolio.runtimeconfig.dev.json
+/Users/sammiae/Documents/C#/ASP_NET/Portfolio/bin/Debug/netcoreapp2.0/Portfolio.dll
+/Users/sammiae/Documents/C#/ASP_NET/Portfolio/bin/Debug/netcoreapp2.0/Portfolio.pdb
+/Users/sammiae/Documents/C#/ASP_NET/Portfolio/obj/Debug/netcoreapp2.0/Portfolio.csproj.CoreCompileInputs.cache
+/Users/sammiae/Documents/C#/ASP_NET/Portfolio/obj/Debug/netcoreapp2.0/Portfolio.AssemblyInfoInputs.cache
+/Users/sammiae/Documents/C#/ASP_NET/Portfolio/obj/Debug/netcoreapp2.0/Portfolio.AssemblyInfo.cs
+/Users/sammiae/Documents/C#/ASP_NET/Portfolio/obj/Debug/netcoreapp2.0/Portfolio.dll
+/Users/sammiae/Documents/C#/ASP_NET/Portfolio/obj/Debug/netcoreapp2.0/Portfolio.pdb

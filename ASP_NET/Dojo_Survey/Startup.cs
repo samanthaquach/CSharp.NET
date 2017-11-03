@@ -9,7 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
 
-namespace Start
+namespace Dojo_Survey
 {
     public class Startup
     {

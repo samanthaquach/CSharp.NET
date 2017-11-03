@@ -9,7 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
 
-namespace Start
+namespace Portfolio
 {
     public class Startup
     {
@@ -35,7 +35,7 @@ namespace Start
             }
             app.UseMvc();
             app.UseStaticFiles();
-            
+
             // app.UseMvc(routes =>
             // {
             //     routes.MapRoute(

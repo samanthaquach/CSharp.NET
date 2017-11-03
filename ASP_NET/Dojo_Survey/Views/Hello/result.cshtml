@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="Coding Dojo C#/ASP.NET Core MVC assignment Dojo Survey">
+	<title>Dojo Survey</title>
+	<link rel="stylesheet" href="~/css/style.css"/>
+    <link rel="stylesheet" href="base/css/bootstrap_spacelab.css">
+</head>
+<body>
+
+    
+    <div class="col-md-3">
+        <table class="table table-striped table-hover ">
+
+        <tbody>
+            <tr>
+            <td>Name:</td>
+            <td>@ViewBag.Name</td>
+            </tr>
+            <tr>
+            <td>Location:</td>
+            <td>@ViewBag.Location</td>
+            </tr>
+            <tr>
+            <td>Favorite Language:</td>
+            <td>@ViewBag.Language</td>
+            </tr>
+            <tr>
+            <td>Comment:</td>
+            <td>@ViewBag.Comment</td>
+            </tr>
+        </tbody>
+        </table> 
+    </div>
+
+    <a href="/" class="btn btn-primary btn-sm">Go Back</a>
+
+</body>
+</html>

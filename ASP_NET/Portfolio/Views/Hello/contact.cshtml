@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>CONTACT!</title>
+        <!-- // In this context '~' refers to the wwwroot folder -->
+        <link rel="stylesheet" href="~/css/style.css"/>
+        <link rel="stylesheet" href="base/css/bootstrap_spacelab.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="projects">Project</a></li>
+            <li><a href="contact">Contact</a></li>
+            </ul>
+        </div>
+        </nav>
+
+        
+        <!-- <h1>@ViewBag.Example</h1> -->
+        <!-- @{
+            string LocalString = ViewBag.Example + " Good to see you!";
+        }
+        <h1>@LocalString</h1> -->
+
+        <div class="col-lg-4">
+            <h1>CONTACTS!</h1>
+            <form action="method" method="post">
+                <input type="text" name="TextField" placeholder="Name"/>
+                <input type="number" step="1" name="NumberField" placeholder="Phone Number"/>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+    </body>
+
+
+</html>

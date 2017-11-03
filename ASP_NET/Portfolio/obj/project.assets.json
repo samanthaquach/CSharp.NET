@@ -12530,7 +12530,6 @@
     ".NETCoreApp,Version=v2.0": [
       "Microsoft.AspNetCore.All >= 2.0.0",
       "Microsoft.AspNetCore.Mvc >= 2.0.0",
-      "Microsoft.AspNetCore.StaticFiles >= 2.0.0",
       "Microsoft.NETCore.App >= 2.0.0"
     ]
   },
@@ -12541,11 +12540,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/sammiae/Documents/C#/ASP_NET/Start_Boiler/Start.csproj",
-      "projectName": "Start",
-      "projectPath": "/Users/sammiae/Documents/C#/ASP_NET/Start_Boiler/Start.csproj",
+      "projectUniqueName": "/Users/sammiae/Documents/C#/ASP_NET/Portfolio/Portfolio.csproj",
+      "projectName": "Portfolio",
+      "projectPath": "/Users/sammiae/Documents/C#/ASP_NET/Portfolio/Portfolio.csproj",
       "packagesPath": "/Users/sammiae/.nuget/packages/",
-      "outputPath": "/Users/sammiae/Documents/C#/ASP_NET/Start_Boiler/obj/",
+      "outputPath": "/Users/sammiae/Documents/C#/ASP_NET/Portfolio/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -12583,10 +12582,6 @@
             "version": "2.0.0"
           },
           "Microsoft.AspNetCore.Mvc": {
-            "target": "Package",
-            "version": "2.0"
-          },
-          "Microsoft.AspNetCore.StaticFiles": {
             "target": "Package",
             "version": "2.0"
           }
