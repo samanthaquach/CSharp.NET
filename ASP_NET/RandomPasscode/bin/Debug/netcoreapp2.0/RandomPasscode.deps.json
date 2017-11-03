@@ -21,7 +21,7 @@
   },
   "targets": {
     ".NETCoreApp,Version=v2.0": {
-      "Start/1.0.0": {
+      "RandomPasscode/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.All": "2.0.0",
           "Microsoft.AspNetCore.Mvc": "2.0.0",
@@ -30,10 +30,10 @@
           "Microsoft.NETCore.App": "2.0.0"
         },
         "runtime": {
-          "Start.dll": {}
+          "RandomPasscode.dll": {}
         },
         "compile": {
-          "Start.dll": {}
+          "RandomPasscode.dll": {}
         }
       },
       "Libuv/1.10.0": {
@@ -3976,7 +3976,7 @@
     }
   },
   "libraries": {
-    "Start/1.0.0": {
+    "RandomPasscode/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

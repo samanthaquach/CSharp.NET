@@ -9,7 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
 
-namespace Start
+namespace RandomPasscode
 {
     public class Startup
     {
@@ -34,12 +34,12 @@ namespace Start
             {
                 app.UseDeveloperExceptionPage();
             }
-            
+
             app.UseSession();
             app.UseMvc();
             app.UseStaticFiles();
 
-            
+
             // app.UseMvc(routes =>
             // {
             //     routes.MapRoute(

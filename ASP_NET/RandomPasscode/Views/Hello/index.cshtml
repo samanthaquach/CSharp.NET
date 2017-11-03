@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Random Word Generator</title>
+        <!-- // In this context '~' refers to the wwwroot folder -->
+        <link rel="stylesheet" href="~/css/style.css"/>
+ 
+    </head>
+    <body>
+        <h3>Random Word (attempt # @ViewBag.Count)</h3>
+
+        <div class="center">
+            <h1>@ViewBag.Rando</h1>
+        </div>
+
+        <a class="btn btn-pop" href="/"><button>Generate</button></a>
+        <a class="btn btn-pop" href="clear"><button>Clear</button></a>
+
+    </body>
+
+</html>

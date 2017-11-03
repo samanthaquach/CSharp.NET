@@ -12542,11 +12542,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/sammiae/Documents/C#/ASP_NET/Start_Boiler/Start.csproj",
-      "projectName": "Start",
-      "projectPath": "/Users/sammiae/Documents/C#/ASP_NET/Start_Boiler/Start.csproj",
+      "projectUniqueName": "/Users/sammiae/Documents/C#/ASP_NET/RandomPasscode/RandomPasscode.csproj",
+      "projectName": "RandomPasscode",
+      "projectPath": "/Users/sammiae/Documents/C#/ASP_NET/RandomPasscode/RandomPasscode.csproj",
       "packagesPath": "/Users/sammiae/.nuget/packages/",
-      "outputPath": "/Users/sammiae/Documents/C#/ASP_NET/Start_Boiler/obj/",
+      "outputPath": "/Users/sammiae/Documents/C#/ASP_NET/RandomPasscode/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -12585,11 +12585,11 @@
           },
           "Microsoft.AspNetCore.Mvc": {
             "target": "Package",
-            "version": "2.0"
+            "version": "2.00"
           },
           "Microsoft.AspNetCore.Session": {
             "target": "Package",
-            "version": "2.0.0"
+            "version": "2.0"
           },
           "Microsoft.AspNetCore.StaticFiles": {
             "target": "Package",
