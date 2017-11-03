@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Dojo_Survey.Controllers
 {
-    public class HelloController : Controller
+    public class UserController : Controller
     {
         [HttpGet]
         [Route("")]
