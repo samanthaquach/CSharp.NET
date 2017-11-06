@@ -1,13 +1,28 @@
-using Microsoft.AspNetCore.Http;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
+using Microsoft.AspNetCore.Http;
+using DbConnection;
 
 
 namespace Start.Controllers
 {
     public class HelloController : Controller
     {
-       
+        //======DB CONNECTION =====
+        // Other code
+        // [HttpGet]
+        // [Route("")]
+        // public IActionResult Index()
+        // {
+        //     List<Dictionary<string, object>> AllUsers = DbConnector.Query("SELECT * FROM users");
+        //     // Other code
+        //     return View();
+        // }
+
+
+
         // A GET method
         // [HttpGet]
         // [Route("index")]

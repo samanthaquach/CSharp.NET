@@ -1,0 +1,37 @@
+@{
+    ViewData["Title"] = "Quotes";
+}
+<h1>Welcome to Quoting Dojo!</h1>
+<form class="form-horizontal" action="quotes" method="post">
+        <fieldset>
+            <!-- ==================== NAME NAME NAME =================================== -->
+            <div class="form-group">
+                <label for="inputName" class="col-md-2 control-label">Name</label>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" name="name" id="inputName" placeholder="Name">
+                </div>
+            </div>
+
+
+            <!-- ===================== QUOTE QUOTE QUOTE ============================ -->
+            <div class="form-group">
+                <label for="comment" class="col-md-2 control-label">Quote</label>
+                <div class="col-md-10">
+                    <textarea class="form-control" name="quote" rows="3" id="textArea"></textarea>
+                    <br><span class="help-block">Add A Quote Today!</span>
+                    <br>
+                </div>
+            </div>
+
+             <!-- ===================== SUBMIT FORM BUTTON ================================= -->
+            <div class="form-group">
+            <div class="col-md-10 col-md-offset-2">
+                <a href ="/quotes"><button class="btn btn-default">Skip to quotes</button></a>
+                <button type="submit" name="submit" class="btn btn-primary">Add A Quote</button>
+                
+            </div>
+            </div>
+
+            
+        </fieldset>
+        </form>

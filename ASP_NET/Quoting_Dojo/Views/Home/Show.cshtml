@@ -1,0 +1,24 @@
+@{
+    ViewData["Title"] = "List of Quotes";
+}
+
+<h1>Here are all the quotes!</h1>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Quote</th>
+    </tr>
+    @if (ViewBag.allUsers != null)
+        {
+            foreach(var user in @ViewBag.allUsers)
+            {
+            <tr>
+                <td>@user["name"]</td>
+                <td>@user["quote"]</td>
+            </tr>
+            }
+
+        } 
+     
+
+</table>

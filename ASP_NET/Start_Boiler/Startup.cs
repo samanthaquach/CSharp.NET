@@ -36,8 +36,8 @@ namespace Start
             }
             
             app.UseSession();
-            app.UseMvc();
             app.UseStaticFiles();
+            app.UseMvc();
 
             
             // app.UseMvc(routes =>
