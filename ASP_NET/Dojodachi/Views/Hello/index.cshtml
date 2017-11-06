@@ -2,41 +2,43 @@
 <html>
     <head>
         <meta charset='utf-8'>
-        <title>Hello!</title>
-        <!-- // In this context '~' refers to the wwwroot folder -->
+        <title>SAM-A-GACHI</title>
+
         <link rel="stylesheet" href="~/css/style.css"/>
-        <!-- THE STATIC FILE ABOVE ^^^^^^^^^^^^^^^^^^^^ ========== -->
+
     </head>
-    <!-- <body>
-        <h1>Hello ASP.NET Mvc!</h1>
-    </body> -->
-    <!-- <body>
-        @{
-            var StringList = new List<string>{
-                                    "one",
-                                    "two",
-                                    "three",
-                                    "four"
-                                };
-            
-            foreach(var word in StringList)
-            {
-                // We can render HTML from within C# code!
-                <p>@word</p>
-            }
-        }
-    </body> -->
     <body>
-        @foreach(var word in StringList)
-        {
-        <div>
-            <p>@word</p>
-            @if(word.Length < 4)
+        <div class="container">
+            <div class="Status">
+                <p>Fullness: @ViewBag.Fullness</p>
+                <p>Happiness: @ViewBag.Happiness</p>
+                <p>Meals: @ViewBag.Meals</p>
+                <p>Energy: @ViewBag.Energy</p>
+            </div>
+            <!-- DISPLAY MY DACHI -->
+            <div class="Samagatchi">
+                <img src=@ViewBag.ResultPic alt="Samagatchi">
+                <p>@ViewBag.ResultText</p> 
+            </div>
+            @if (ViewBag.Alive)
             {
-                <p>@word is a short word</p>
+            <div class="Buttons">
+                <a class="btn btn-pop" href="Feed"><button>Feed</button></a>
+                <a class="btn btn-pop" href="Play"><button>Play</button></a>
+                <a class="btn btn-pop" href="Work"><button>Work</button></a>
+                <a class="btn btn-pop" href="Sleep"><button>Sleep</button></a>
+            </div>
             }
+            else
+            {
+
+            <a class="btn btn-imp" href="Reset"><button>"Play Again?"</button></a>
+            }
+
         </div>
-        }
+        </div>
+
     </body>
+
 
 </html>
