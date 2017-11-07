@@ -1,0 +1,58 @@
+@{
+    ViewData["Title"] = "UPDATE NOTES";
+}
+<h1>Update NOTE!</h1>
+@if (ViewBag.Errors != null)
+{
+    <ul class="notif sixty center">
+	@foreach(string error in ViewBag.Errors)
+	{
+		<li>@error</li>
+	}
+    </ul>
+}
+@if (ViewBag.thisNote != null)
+    {
+        @foreach(var user in @ViewBag.thisNote)
+        {
+
+        <form class="form-horizontal" action="" method="post">
+        <fieldset>
+            <input type="hidden" name="id" value="@ViewBag.id">
+            <!-- ===================== NOTE NOTE NOTE ============================ -->
+            <div class="form-group">
+                <label for="comment" class="col-md-2 control-label">Notes</label>
+                <div class="col-md-10">
+                    <textarea class="form-control" name="note" rows="3" id="textArea" placeholder='@user["note"]'></textarea>
+                    <br><span class="help-block">Add A Note</span>
+                    <br>
+                </div>
+            </div>
+
+            <!-- ==================== TITLE TITLE TITLE =================================== -->
+            <div class="form-group">
+                <label for="inputName" class="col-md-2 control-label">Title</label>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" name="title" id="inputTitle" placeholder='@user["title"]'>
+                </div>
+            </div>
+
+             <!-- ===================== SUBMIT FORM BUTTON ================================= -->
+            <div class="form-group">
+            <div class="col-md-10 col-md-offset-2">
+                
+                <a class="btn btn-dflt" href="/"><button class="btn btn-default">Back to Notes</button></a>
+                <button class="btn btn-pop" type="submit" name="Update" value="Update Note!" class="btn btn-primary">Update</button>
+                
+            </div>
+            </div>
+
+
+            
+        </fieldset>
+        </form>
+
+
+        }
+    }
+

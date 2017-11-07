@@ -1,0 +1,55 @@
+@{
+    ViewData["Title"] = "Notes";
+}
+<h1>Welcome to Quoting Dojo!</h1>
+
+    @if (ViewBag.allNotes != null)
+    {
+    foreach(var user in @ViewBag.allNotes)
+        {
+        <h3>@user["title"]</h3>
+        <span>@user["note"]</span>
+        <span>@user["id"]</span>
+        <p><a href='update/@user["id"]'>update</a> | <a href='delete/@user["id"]'>delete</a></p>
+
+        }
+
+    } 
+    else{
+        <h3>No Notes Listed.</h3>
+    }
+    
+<form class="form-horizontal" action="addnotes" method="post">
+        <fieldset>
+            
+            <!-- ===================== NOTES NOTES NOTES ============================ -->
+            <div class="form-group">
+                <label for="comment" class="col-md-2 control-label">Notes</label>
+                <div class="col-md-10">
+                    <textarea class="form-control" name="note" rows="3" id="textArea" placeholder="Enter Description Here"></textarea>
+                    <br><span class="help-block">Add A Note</span>
+                    <br>
+                </div>
+            </div>
+
+            <!-- ==================== TITLE TITLE TITLE =================================== -->
+            <div class="form-group">
+                <label for="inputName" class="col-md-2 control-label">Title</label>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" name="title" id="inputTitle" placeholder="Insert Note Title">
+                </div>
+            </div>
+
+             <!-- ===================== SUBMIT FORM BUTTON ================================= -->
+            <div class="form-group">
+            <div class="col-md-10 col-md-offset-2">
+                <button type="reset" class="btn btn-default">Cancel</button>
+                <button type="submit" name="submit" class="btn btn-primary">Add A Quote</button>
+                
+            </div>
+            </div>
+
+
+            
+        </fieldset>
+        </form>
