@@ -1,26 +1,45 @@
+// using System.Collections.Generic;
+// using System.Data;
+// using MySql.Data.MySqlClient;
 using System.Collections.Generic;
 using System.Data;
+using Microsoft.Extensions.Options;
 using MySql.Data.MySqlClient;
+// using Quoting_Dojo;
 
-namespace DbConnection
+
+namespace Quoting_Dojo
 {
     public class DbConnector
     {
-        static string server = "localhost";
-        static string db = "Quotes"; //Change to your schema name
-        static string port = "3306"; //Potentially 8889
-        static string user = "root";
-        static string pass = "root";
-        internal static IDbConnection Connection
+        private readonly IOptions<MySqlOptions> MySqlConfig;
+
+        public DbConnector(IOptions<MySqlOptions> config)
+        {
+            MySqlConfig = config;
+        }
+        internal IDbConnection Connection
         {
             get
             {
-                return new MySqlConnection($"Server={server};Port={port};Database={db};UserID={user};Password={pass};SslMode=None");
+                return new MySqlConnection(MySqlConfig.Value.ConnectionString);
             }
         }
+        // static string server = "localhost";
+        // static string db = "Quotes"; //Change to your schema name
+        // static string port = "3306"; //Potentially 8889
+        // static string user = "root";
+        // static string pass = "root";
+        // internal static IDbConnection Connection
+        // {
+        //     get
+        //     {
+        //         return new MySqlConnection($"Server={server};Port={port};Database={db};UserID={user};Password={pass};SslMode=None");
+        //     }
+        // }
 
         //This method runs a query and stores the response in a list of dictionary records
-        public static List<Dictionary<string, object>> Query(string queryString)
+        public List<Dictionary<string, object>> Query(string queryString)
         {
             using (IDbConnection dbConnection = Connection)
             {
@@ -46,7 +65,7 @@ namespace DbConnection
             }
         }
         //This method run a query and returns no values
-        public static void Execute(string queryString)
+        public void Execute(string queryString)
         {
             using (IDbConnection dbConnection = Connection)
             {
