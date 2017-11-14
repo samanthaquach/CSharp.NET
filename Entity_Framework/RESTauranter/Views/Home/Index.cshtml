@@ -1,0 +1,97 @@
+@model Form_Submission.Models.User
+
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+<h1>Register</h1>
+
+	@if (ViewBag.showReg)
+	{
+		<ul class="notif seventy center">
+			@{
+				foreach (string error in ViewBag.errors)
+				{
+					<li>@error</li>
+				}
+			}
+		</ul><!-- end_of_notif-->
+	}
+
+<a href="reviews"><button class="btn btn-default">Already Reviewed?</button></a>
+<form class="form-horizontal" asp-controller="Home" asp-action="register" method="post"> 
+        <fieldset>
+            <!-- ==================== First NAME NAME NAME =================================== -->
+            <div class="form-group">
+                <label for="inputName" class="col-md-2 control-label" asp-controller="firstname">First Name</label>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" name="firstname" id="inputFirstName" placeholder="First Name" asp-controller="firstname">
+                </div>
+            </div>
+
+
+            <!-- ===================== Last NAME NAME NAME ============================ -->
+            <div class="form-group">
+                <label for="inputName" class="col-md-2 control-label" asp-controller="lastname">Last Name</label>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" name="lastname" id="inpuLasttName" placeholder="Last Name" asp-controller="lastname">
+                </div>
+            </div>
+
+
+            <!-- ===================== RESTURANT NAME =============================== -->
+
+            <div class="form-group">
+                <label for="inputName" class="col-md-2 control-label" asp-controller="restaurant">Restaurant Name</label>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" name="restaurant" id="inputrestaurant" placeholder="Restaurant Name" asp-controller="restaurant">
+                </div>
+            </div>
+
+           <!-- ===================== REVIEW REVIEW REVIEW ============================ -->
+            <div class="form-group">
+                <label for="review" class="col-md-2 control-label" asp-controller="review">Review</label>
+                <div class="col-md-10">
+                    <textarea class="form-control" name="review" rows="3" id="textArea" asp-controller="review"></textarea>
+                    <span class="help-block">Review the restaurant.</span>
+                </div>
+            </div>
+
+
+            <!-- ===================== DATE OF VISIT =============================== -->
+
+            <div class="form-group">
+                <label for="inputName" class="col-md-2 control-label" asp-controller="datevisit">Date of Visit</label>
+                <div class="col-md-10">
+                    <input type="date" id="datepick" name="datevisit" asp-controller="datevisit">
+    
+                </div>
+            </div>
+
+            <!-- ===================== RATING RATING RATING ================================= -->
+
+            <div class="form-group">
+                <label for="select" class="col-md-2 control-label" asp-controller="rating">Star Rating</label>
+                <div class="col-md-10">
+                    <select class="form-control" name="rating" asp-controller="rating">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+
+             <!-- ===================== SUBMIT FORM BUTTON ================================= -->
+            <div class="form-group">
+            <div class="col-md-10 col-md-offset-2">
+                <button type="reset" class="btn btn-default">Cancel</button>
+                <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+                
+            </div>
+            </div>
+
+            
+    </fieldset>
+</form>

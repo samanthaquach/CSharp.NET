@@ -1,0 +1,14 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+    @if (ViewBag.thisUser != null)
+        {
+            foreach(var user in @ViewBag.User)
+            {
+            <h1>You have successfully registered, @user.firstname!</h1>
+            }
+
+        } 
+    <h1>You have successfully registered, @ViewBag.Name!</h1>
+
+<a href="logout">Log Out</a>

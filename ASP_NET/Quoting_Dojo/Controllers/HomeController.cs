@@ -10,11 +10,7 @@ namespace Quoting_Dojo.Controllers
 {
     public class HomeController : Controller
     {
-        // private DbConnector dbConnector;
-        // public HomeController()
-        // {
-        //     dbConnector = new DbConnector();
-        // }
+
         private readonly DbConnector _dbConnector;
 
         public HomeController(DbConnector connect)
@@ -39,9 +35,11 @@ namespace Quoting_Dojo.Controllers
         [Route("quotes")]
         public IActionResult Submit(string name, string quote)
         {
+            var updated_at = DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss");
+            var created_at = DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss");
             Console.WriteLine(name);
             Console.WriteLine(quote);
-            string query = $"INSERT INTO Users (name, quote) VALUES ('{name}', '{quote}')";
+            string query = $"INSERT INTO Users (name, quote, created_at, updated_at) VALUES ('{name}', '{quote}', '{created_at}', '{updated_at}')";
             Console.WriteLine("==================== this is the text =============");
             _dbConnector.Execute(query);
             ViewBag.Name = name;

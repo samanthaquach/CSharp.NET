@@ -1,0 +1,44 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+<a class="btn btn-pop" href="clear">Log Out</a>
+
+<h1>Hello, person</h1>
+<div></div>
+<hr>
+
+
+
+<form class="form-horizontal" action="/banking" method="post">
+    <fieldset>
+
+            <!-- ========   enter the deposit   ===========-->
+
+        <div class="form-group">
+            <label for="inputDeposit" class="col-md-2 control-label" >Deposit</label>
+            <div class="col-md-10">
+                <input type="number" class="form-control" name="deposit" id="inputDeposit" placeholder="How much do you want to deposit?">
+            </div>
+        </div>
+
+            <!-- ======== enter the withdrawal ===========-->
+
+        <div class="form-group">
+            <label for="inputWithdraw" class="col-md-2 control-label">Withdraw</label>
+            <div class="col-md-10">
+                <input type="number" class="form-control" name="withdraw" id="inputWithdraw" placeholder="How much do you want to withdraw?">
+            </div>
+        </div>
+
+        <!-- ==========  submit the form  =========== -->
+
+        <div class="form-group">
+            <div class="col-md-10 col-md-offset-2">
+                <button type="reset" class="btn btn-default">Cancel</button>
+                <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+
+            
+    </fieldset>
+</form>

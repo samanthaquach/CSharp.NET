@@ -1,0 +1,24 @@
+@using Form_Submission.Models
+@model List<Form_Submission.Models.User>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<br><br>
+@{
+    foreach(var review in Model)
+    {
+       <div>
+           <p>Name: @review.firstname @review.lastname</p>
+           <p>Restaurant: @review.restaurant</p>
+           <p>Review: @review.review</p>
+           <p>Rating: @review.rating</p>
+           <p>Date: @review.datevisit</p>
+            <hr>
+       </div>
+    }
+
+}
+
+<a href="/">Go Back</a>

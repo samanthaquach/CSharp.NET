@@ -1,0 +1,74 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+<h1>Register</h1>
+
+    <ul>
+        @{
+            foreach(var field in ViewBag.ModelFields)
+            {
+                if (field.Errors.Count > 0)
+                {
+                    <li>@field.Errors[0].ErrorMessage</li>
+                }
+            }
+        }
+    </ul>
+    
+<form class="form-horizontal" action="register" method="post">
+        <fieldset>
+            <!-- ==================== First NAME NAME NAME =================================== -->
+            <div class="form-group">
+                <label for="inputName" class="col-md-2 control-label">First Name</label>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" name="firstname" id="inputFirstName" placeholder="First Name">
+                </div>
+            </div>
+
+
+            <!-- ===================== Last NAME NAME NAME ============================ -->
+            <div class="form-group">
+                <label for="inputName" class="col-md-2 control-label">Last Name</label>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" name="lastname" id="inpuLasttName" placeholder="Last Name">
+                </div>
+            </div>
+
+            <!-- ===================== AGE AGE AGE AGE ================================= -->
+
+            <div class="form-group">
+                <label for="inputName" class="col-md-2 control-label">Age</label>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" name="age" id="inputAge" placeholder="Age">
+                </div>
+            </div>
+
+            <!-- ===================== EMAIL EMAIL EMAIL =============================== -->
+
+            <div class="form-group">
+                <label for="inputName" class="col-md-2 control-label">Email</label>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" name="email" id="inputEmail" placeholder="Email">
+                </div>
+            </div>
+
+            <!-- ===================== PASSWORD PASSWORD PASS =============================== -->
+
+            <div class="form-group">
+                <label for="inputName" class="col-md-2 control-label">Password</label>
+                <div class="col-md-10">
+                    <input type="password" class="form-control" name="password" id="inputPassword">
+                </div>
+            </div>
+
+             <!-- ===================== SUBMIT FORM BUTTON ================================= -->
+            <div class="form-group">
+            <div class="col-md-10 col-md-offset-2">
+                <button type="reset" class="btn btn-default">Cancel</button>
+                <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+            </div>
+            </div>
+
+            
+    </fieldset>
+</form>

@@ -1,0 +1,37 @@
+@{
+    ViewData["Title"] = "Login";
+}
+<br><br>
+
+<a href="/"><button class="btn btn-default">Don't have an account?</button></a>    
+<form class="form-horizontal" action="login" method="post">
+    <fieldset>
+        
+        <!-- ===================== EMAIL EMAIL EMAIL =============================== -->
+
+        <div class="form-group">
+            <label for="inputName" class="col-md-2 control-label">Email</label>
+            <div class="col-md-10">
+                <input type="text" class="form-control" name="email" id="inputEmail" placeholder="Email">
+            </div>
+        </div>
+
+        <!-- ===================== PASSWORD PASSWORD PASS =============================== -->
+
+        <div class="form-group">
+            <label for="inputName" class="col-md-2 control-label">Password</label>
+            <div class="col-md-10">
+                <input type="password" class="form-control" name="password" id="inputPassword">
+            </div>
+        </div>
+
+            <!-- ===================== SUBMIT FORM BUTTON ================================= -->
+        <div class="form-group">
+        <div class="col-md-10 col-md-offset-2">
+            <button type="submit" name="login" class="btn btn-primary">Login</button>
+        </div>
+        </div>
+
+            
+    </fieldset>
+</form>

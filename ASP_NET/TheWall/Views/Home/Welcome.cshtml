@@ -1,0 +1,75 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+    @if (ViewBag.User != null)
+        {
+            foreach(var user in @ViewBag.User)
+            {
+            <h1>Hello, @user["firstname"]!</h1>
+            }
+
+        }
+        else{
+          <h1>WELCOME!</h1>  
+        } 
+    
+    <form class="form-horizontal" action="addmessages" method="post">
+        <fieldset>
+            
+            <!-- ===================== NOTES NOTES NOTES ============================ -->
+            <div class="form-group">
+                <label for="message" class="col-md-2 control-label">Message</label>
+                <div class="col-md-10">
+                    <textarea class="form-control" name="message" rows="3" id="textArea" placeholder="Enter Description Here"></textarea>
+                    <br><span class="help-block">Add A Note</span>
+                    <br>
+                </div>
+            </div>
+
+             <!-- ===================== SUBMIT FORM BUTTON ================================= -->
+            <div class="form-group">
+            <div class="col-md-10 col-md-offset-2">
+                <button type="reset" class="btn btn-default">Cancel</button>
+                <button type="submit" name="submit" class="btn btn-primary">Add Message</button>
+                
+            </div>
+            </div>
+
+
+            
+        </fieldset>
+    </form>
+        @{
+            @if (ViewBag.allMessages != null)
+            {
+            @foreach(var user in @ViewBag.allMessages)
+                {
+                <h3>@user["message"]</h3>
+                <span>@user["id"]</span>
+                <form action="comment" method='POST'>
+                    <input type="hidden" value='@user["id"]' name="id">
+                    <textarea rows="5" cols="20" name="comment"> </textarea>
+                    <input type="submit" value="Add_Comment">
+                </form>
+                
+                }
+            @foreach(var comment in @ViewBag.allComments)
+            {
+                if (@comment["Message_id"] == @user["id"])
+                {
+                    @comment["comment"]
+                }
+            }
+            
+            } 
+        }
+       
+
+           
+
+    
+        else{
+            <h3>No Notes Listed.</h3>
+        }
+
+
