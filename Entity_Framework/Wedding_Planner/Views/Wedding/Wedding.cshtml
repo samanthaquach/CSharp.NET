@@ -1,0 +1,63 @@
+
+@model Wedding_Planner.Models.Planning
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+<h1>Register your wedding</h1>
+<hr>
+
+
+<a href="/clear"><button class="btn btn-default">Log out</button></a>
+<a href="/planner"><button class="btn btn-default">See Weddings</button></a><br>
+<br>
+<form class="form-horizontal" asp-controller="Wedding" asp-action="process" method="post">
+        <fieldset>
+            <!-- ======== enter the first name ===========-->
+            <div class="form-group">
+                <label for="inputwedderone" class="col-md-2 control-label"  asp-for="wedderone">wedder one</label>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" name="wedderone" id="inputwedderone" placeholder="wedder one" asp-for="wedderone">
+                </div>
+            </div>
+
+
+            <!-- ======== enter the last name ===========-->
+            <div class="form-group">
+                <label for="inputweddertwo" class="col-md-2 control-label" asp-for="weddertwo">wedder two</label>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" name="weddertwo" id="inputweddertwo" placeholder="wedder two" asp-for="weddertwo">
+                </div>
+            </div>
+
+
+             <!-- ========   enter the email    ===========-->
+
+            <div class="form-group">
+                <label for="inputdate" class="col-md-2 control-label" asp-for="date">date</label>
+                <div class="col-md-10">
+                    <input type="date" class="form-control" name="date" id="inputdate" placeholder="date" asp-for="date">
+                </div>
+            </div>
+
+             <!-- ======== enter the password ===========-->
+
+            <div class="form-group">
+                <label for="inputaddress" class="col-md-2 control-label" asp-for="address">address</label>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" name="address" id="inputaddress" asp-for="address">
+                </div>
+            </div>
+
+             <!-- ==========  submit the form  =========== -->
+
+            <div class="form-group">
+            <div class="col-md-10 col-md-offset-2">
+                <button type="reset" class="btn btn-default">Cancel</button>
+                <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+            </div>
+            </div>
+
+            
+    </fieldset>
+</form>

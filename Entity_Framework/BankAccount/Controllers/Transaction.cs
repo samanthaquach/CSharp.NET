@@ -47,9 +47,14 @@ namespace BankAccount.Controllers
 
             string currUser = HttpContext.Session.GetString("LOGGED_IN_USER");
             var person = _context.Users.SingleOrDefault(user => user.email == currUser);
-            balance = 0;
-            var user_balance = _context.Users.Where(user => user.email == currUser).UsersJoin(Account, x => x.Id)
-            var newbalance = deposit + person.balance - withdraw;
+            // List<Account> Account = _context.Account.Include(account => account.User).ToList(); // Adding this field for the models for Account
+            balance = 0;            
+            // List<Account> userbal = _context.Account.Include(post => post.User).ToList();
+            List<User> userbal = _context.Users.Include(x => x.Account).ToList();
+                    
+            // var bal = user_balance.Account.balance + balance
+
+            var newbalance = deposit + balance - withdraw;
 
             // if (Amount < 0 && ((Amount * -1) > user.Balance))
             // {

@@ -47,6 +47,10 @@ namespace BankAccount.Controllers
             errors.Clear(); //clear out all errors to begin
             whichErr = null; //reset whichErr
             var checkUser = _context.Users.SingleOrDefault(user => user.email == email);
+            // List<User> Users = _context.Users
+            //            .Include(user => user.Account)
+            //            .ToList();
+
 
             User NewUser = new User
             {

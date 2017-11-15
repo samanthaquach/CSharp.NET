@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.Hosting;
 using Wedding_Planner.Models;
 using MySQL.Data.EntityFrameworkCore;
 using MySQL.Data.EntityFrameworkCore.Extensions;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace Wedding_Planner
 {
@@ -28,11 +30,13 @@ namespace Wedding_Planner
         public void ConfigureServices(IServiceCollection services)
         {
             // Add framework services.
+            services.AddDbContext<WeddingContext>(options => options.UseNpgsql(Configuration["DBInfo:ConnectionString"]));
             services.AddMvc();
             services.AddSession();
-            services.Configure<MySqlOptions>(Configuration.GetSection("DBInfo"));
+            // services.Configure<MySqlOptions>(Configuration.GetSection("DBInfo"));
             services.AddScoped<DbConnector>();
-            services.AddDbContext<WeddingContext>(options => options.UseMySQL(Configuration["DBInfo:ConnectionString"]));
+            // services.AddDbContext<WeddingContext>(options => options.UseMySQL(Configuration["DBInfo:ConnectionString"]));
+            
 
         }
 

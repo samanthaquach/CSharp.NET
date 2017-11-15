@@ -1,10 +1,9 @@
 using System.ComponentModel.DataAnnotations;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 
 namespace Wedding_Planner.Models
 {
-
-    public abstract class BaseEntity {}
     public class User : BaseEntity
     {
         public int id { get; set; }
@@ -32,8 +31,19 @@ namespace Wedding_Planner.Models
         [Required(ErrorMessage = "Confirm Password cannot be left blank.")]
         public string confirm { get; set; }
 
+        public List<Planning> Planning { get; set; }
+        public List<RSVP> RSVP { get; set; }
+        public User()
+        {
+            Planning = new List<Planning>();
+            RSVP = new List<RSVP>();
+        }
+
         
+
+
     }
+    
     public class LogUser : BaseEntity
     { 
         [Required(ErrorMessage = "Email address cannot be left blank")]
@@ -42,10 +52,4 @@ namespace Wedding_Planner.Models
         public string password { get; set; }
     }
 
-
-    public class LoginRegViewModel : BaseEntity
-    {
-        public LogUser loginVM { get; set; }
-        public User registerVM { get; set; }
-    }
 }

@@ -9,5 +9,6 @@ namespace BankAccount.Models
         public int withdraw { get; set; }
         public int balance { get; set; }
         public int Users_id { get; set; }
+        public User User { get; set; }
     }
 }

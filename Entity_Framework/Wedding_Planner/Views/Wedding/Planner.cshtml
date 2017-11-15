@@ -1,0 +1,49 @@
+
+@model Wedding_Planner.Models.Wrapper
+
+
+<br>
+<a href="wedding"><button class="btn btn-default">Add A Calendar</button></a>
+<br>    
+<h1>The Wedding Planner</h1>
+<hr>
+
+<table class="table table-striped table-hover table-bordered">
+  <thead class="table-success">
+    <tr>
+      <th>Wedding</th>
+      <th>Date</th>
+      <th>Guest</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+
+ @{ 
+     foreach(var plan in @Model.Planning)
+     {
+         <tr>
+             <td><a href="show/@plan.id">@plan.wedderone & @plan.weddertwo</a></td>
+             <td>@plan.date</td>
+             <td>@plan.id</td>
+             <td>   
+                @if(@plan.Userid == @ViewBag.id)
+                    {
+                      <a href="unrsvp/@plan.id">Delete</a>
+                    }
+                else
+                    {
+                    <form class="form-horizontal" action="show/@plan.id" method="post">
+                    <input type="hidden" name="Userid" value="@ViewBag.id">
+                    <input type="hidden" name="Planningid" value="@plan.id">
+                    <button type="submit" name="RSVP" class="btn btn-primary">RSVP</button>
+                    </form>
+                    }
+              </td>
+
+         </tr>
+     }
+ }
+  </tbody>
+</table> 
+<hr>

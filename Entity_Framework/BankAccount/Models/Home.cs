@@ -1,12 +1,15 @@
+using System;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 
 namespace BankAccount.Models
 {
-
+    // private List<Account> Transaction = new List<Account>();
     public abstract class BaseEntity {}
     public class User : BaseEntity
     {
+
         public int id { get; set; }
 
         [Required(ErrorMessage = "First name cannot be left blank.")]
@@ -31,9 +34,16 @@ namespace BankAccount.Models
 
         [Required(ErrorMessage = "Confirm Password cannot be left blank.")]
         public string confirm { get; set; }
+        public List<Account> Account { get; set; }
 
-        
+        public User()
+        {
+            Account = new List<Account>();
+        }
+
     }
+
+    
     public class LogUser : BaseEntity
     { 
         [Required(ErrorMessage = "Email address cannot be left blank")]
