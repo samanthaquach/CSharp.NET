@@ -31,23 +31,14 @@ namespace Wedding_Planner.Models
         public int Userid { get; set; }
 
         public User User { get; set; }
-        public RSVP RSVP { get; set; }
-        // public List<RSVP> RSVP { get; set; }
-        // public Planning()
-        // {
-        //     RSVP = new List<RSVP>();
-        // }
 
-    }
+        public List<RSVP> RSVP { get; set; }
 
-    public class RSVP : BaseEntity
-    {
-        public int id { get; set; }
-        public User Guest { get; set; }
-        public int Userid { get; set; }
-        public int Planningid { get; set; }
-        public Planning Planning { get; set; }
-
+        public Planning()
+        {
+            RSVP = new List<RSVP>();
+        }
+        
     }
 
 

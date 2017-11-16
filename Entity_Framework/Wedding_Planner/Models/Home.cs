@@ -6,7 +6,7 @@ namespace Wedding_Planner.Models
 {
     public class User : BaseEntity
     {
-        public int id { get; set; }
+        public int UserId { get; set; }
 
         [Required(ErrorMessage = "First name cannot be left blank.")]
         [MinLength(2, ErrorMessage = "First name must be at least 2 characters in length.")]

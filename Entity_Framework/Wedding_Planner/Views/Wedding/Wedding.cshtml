@@ -7,6 +7,17 @@
 <h1>Register your wedding</h1>
 <hr>
 
+@if (ViewBag.showWedding)
+{
+    <ul class="notif seventy center">
+        @{
+            foreach (string error in ViewBag.errors)
+            {
+                <li>@error</li>
+            }
+        }
+    </ul><!-- end_of_notif-->
+}
 
 <a href="/clear"><button class="btn btn-default">Log out</button></a>
 <a href="/planner"><button class="btn btn-default">See Weddings</button></a><br>

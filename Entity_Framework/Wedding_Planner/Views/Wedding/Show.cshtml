@@ -1,6 +1,6 @@
 @model Wedding_Planner.Models.Wrapper
 <br>
-<a href="wedding"><button class="btn btn-default">Add A Calendar</button></a>
+<a href="http://localhost:5000/planner"><button class="btn btn-default">Go To Your Agenda</button></a>
 <br>    
 <h1>The Wedding Page</h1>
 <hr>
@@ -16,8 +16,32 @@
 
 <hr>
 <h3>People Who RSVP</h3>
-<form class="form-horizontal" action="" method="post">
-  <input type="hidden" name="Userid" value="@ViewBag.id">
-  <input type="hidden" name="Planningid" value="@ViewBag.planid">
-  <button type="submit" name="RSVP" class="btn btn-primary">RSVP</button>
-</form>
+
+@foreach (var guest in @ViewBag.allGoers) {
+  @foreach (var item in @Model.RSVP) {
+    if(@ViewBag.planid == @item.Planningid){
+      <span>@item.Guest.firstname</span><br>
+    }
+  }
+  
+} 
+<br>
+
+@foreach (var guest in @ViewBag.allGoers) {
+  @foreach (var item in @Model.RSVP) {
+    if(@ViewBag.id != @guest.User.UserId){
+      <form class="form-horizontal" action="" method="post">
+      <input type="hidden" name="Userid" value="@ViewBag.id">
+      <input type="hidden" name="Planningid" value="@ViewBag.planid">
+      <button type="submit" name="RSVP" class="btn btn-primary">RSVP</button>
+      </form>
+      break;
+    }
+  }
+  
+} 
+
+
+
+
+

@@ -8,8 +8,8 @@ using Wedding_Planner.Models;
 namespace Wedding_Planner.Migrations
 {
     [DbContext(typeof(WeddingContext))]
-    [Migration("20171115030226_wedding")]
-    partial class wedding
+    [Migration("20171115223240_first")]
+    partial class first
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -42,6 +42,24 @@ namespace Wedding_Planner.Migrations
                     b.ToTable("planning");
                 });
 
+            modelBuilder.Entity("Wedding_Planner.Models.RSVP", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("Planningid");
+
+                    b.Property<int>("Userid");
+
+                    b.HasKey("id");
+
+                    b.HasIndex("Planningid");
+
+                    b.HasIndex("Userid");
+
+                    b.ToTable("RSVP");
+                });
+
             modelBuilder.Entity("Wedding_Planner.Models.User", b =>
                 {
                     b.Property<int>("id")
@@ -71,6 +89,19 @@ namespace Wedding_Planner.Migrations
                 {
                     b.HasOne("Wedding_Planner.Models.User", "User")
                         .WithMany("Planning")
+                        .HasForeignKey("Userid")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("Wedding_Planner.Models.RSVP", b =>
+                {
+                    b.HasOne("Wedding_Planner.Models.Planning", "Planning")
+                        .WithMany("RSVP")
+                        .HasForeignKey("Planningid")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("Wedding_Planner.Models.User", "Guest")
+                        .WithMany("RSVP")
                         .HasForeignKey("Userid")
                         .OnDelete(DeleteBehavior.Cascade);
                 });

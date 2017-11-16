@@ -52,6 +52,8 @@ namespace Wedding_Planner.Migrations
 
                     b.HasKey("id");
 
+                    b.HasIndex("Planningid");
+
                     b.HasIndex("Userid");
 
                     b.ToTable("RSVP");
@@ -59,7 +61,7 @@ namespace Wedding_Planner.Migrations
 
             modelBuilder.Entity("Wedding_Planner.Models.User", b =>
                 {
-                    b.Property<int>("id")
+                    b.Property<int>("UserId")
                         .ValueGeneratedOnAdd();
 
                     b.Property<string>("confirm")
@@ -77,7 +79,7 @@ namespace Wedding_Planner.Migrations
                     b.Property<string>("password")
                         .IsRequired();
 
-                    b.HasKey("id");
+                    b.HasKey("UserId");
 
                     b.ToTable("Users");
                 });
@@ -92,8 +94,13 @@ namespace Wedding_Planner.Migrations
 
             modelBuilder.Entity("Wedding_Planner.Models.RSVP", b =>
                 {
+                    b.HasOne("Wedding_Planner.Models.Planning", "Planning")
+                        .WithMany("RSVP")
+                        .HasForeignKey("Planningid")
+                        .OnDelete(DeleteBehavior.Cascade);
+
                     b.HasOne("Wedding_Planner.Models.User", "Guest")
-                        .WithMany()
+                        .WithMany("RSVP")
                         .HasForeignKey("Userid")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
