@@ -1,20 +1,23 @@
-namespace Human{
+namespace Human
+{
 
-    public class Human{
+    public class Human2 {
 
-        // this is my constructor
+        // second contstructor
         public string name;
-        public int strength = 3; // default values of 3
-        public int intelligence = 3;
-        public int dexterity = 3;
+        public int strength = 4; // default values of 4
+        public int intelligence = 4;
+        public int dexterity = 4;
         public int health = 100; // defaul values of 100
 
-        public Human(string str)
+
+        public Human2(string str)
         {
             name = str;
         }
-        // setting attributes
-        public Human(int val)
+
+        //setting attributes
+        public Human2(int val)
         {
             strength = val;
             intelligence = val;
@@ -24,9 +27,9 @@ namespace Human{
 
         public string Attack(object thing, int damage)
         {
-            if (thing is Human2)
+            if (thing is Human)
             {
-                Human2 person = (Human2)thing;
+                Human person = (Human)thing;
                 damage = strength * 5;
                 person.health -= damage;
                 strength += 1;
@@ -38,7 +41,8 @@ namespace Human{
                 return ("Not attacking human!");
             }
         }
+
+
+
     }
-
-
 }

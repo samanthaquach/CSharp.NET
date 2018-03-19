@@ -2,25 +2,34 @@
 
 namespace Human
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
+            // creating objects
+            Human firstborn = new Human("Ashley");
+            // Console.WriteLine("This first born strength is " + firstborn.strength + "!");
+            // Console.WriteLine("This first born intelligence is " + firstborn.intelligence + "!");
+            // Console.WriteLine("This first born dexterity is " + firstborn.dexterity + "!");
+            // Console.WriteLine("This first born health is " + firstborn.health + "!");
+            // Console.WriteLine("This first born changed name to " + firstborn.name + "!");
 
-            Human myPerson = new Human(5);
-            Console.WriteLine(myPerson.health);
+            Human2 secondborn = new Human2("Robert");
+            // Console.WriteLine("This second born strength is " + secondborn.strength + "!");
+            // Console.WriteLine("This second born intelligence is " + secondborn.intelligence + "!");
+            // Console.WriteLine("This second born dexterity is " + secondborn.dexterity + "!");
+            // Console.WriteLine("This second born health is " + secondborn.health + "!");
+            // Console.WriteLine("This second born changed name to " + secondborn.name + "!");
+            // set attributes in my contructor
+            // if check in my contructor
 
-            Human2 myOther = new Human2(1);
-            Console.WriteLine(myOther.strength);
-            // public class Human
-            // {
-            //     public int name = 3;
-            //     public int strength = 3;
-            //     public int intelligence = 3;
-            //     public int dexterity = 3;
-            //     public int health = 100;
+            string healthactivity = firstborn.Attack(secondborn, firstborn.strength);
+            Console.WriteLine(healthactivity);
+            // Console.WriteLine("{0}'s health is now: {1}", firstborn.name, firstborn.health);
+            string healthactivity2 = secondborn.Attack(firstborn, secondborn.strength);
+            Console.WriteLine(healthactivity2);
 
-            // }
+
 
 
         }

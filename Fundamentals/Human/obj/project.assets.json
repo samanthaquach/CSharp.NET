@@ -670,11 +670,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/sammiae/Documents/C#/Human/Human.csproj",
+      "projectUniqueName": "/Users/sammiae/Documents/C#/Fundamentals/Human/Human.csproj",
       "projectName": "Human",
-      "projectPath": "/Users/sammiae/Documents/C#/Human/Human.csproj",
+      "projectPath": "/Users/sammiae/Documents/C#/Fundamentals/Human/Human.csproj",
       "packagesPath": "/Users/sammiae/.nuget/packages/",
-      "outputPath": "/Users/sammiae/Documents/C#/Human/obj/",
+      "outputPath": "/Users/sammiae/Documents/C#/Fundamentals/Human/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
